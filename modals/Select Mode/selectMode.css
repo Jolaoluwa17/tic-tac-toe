@@ -22,11 +22,7 @@
   border: none;
   background-color: #e9edf2;
   font-size: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
 }
-
 .cancel-icon:hover {
   color: #57708a;
   cursor: pointer;
