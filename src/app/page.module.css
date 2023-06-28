@@ -63,3 +63,56 @@
   color: #57708a;
   cursor: pointer;
 }
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .inner .left {
+    font-family: Lato;
+    font-weight: 800;
+    font-size: 20px;
+    color: #57708a;
+    width: 50%;
+    height: 100%;
+  }
+  @media (max-width: 768px) {
+    .inner .left {
+      font-size: 16px;
+    }
+    .inner .left button {
+      padding: 10px;
+      font-size: 12px;
+    }
+    .rulesBtn {
+      font-size: 12px;
+    }
+    .inner {
+      height: 30vh;
+    }
+  }
+  @media (max-width: 426px){
+    .inner .left {
+      font-size: 10px;
+      width: 100%;
+      margin-top: 2%;
+    }
+    .inner .left button {
+      padding: 8px;
+      font-size: 8px;
+    }
+    .rulesBtn {
+      font-size: 8px;
+    }
+    .inner {
+      height: 20vh;
+    }
+    .help .text {
+      position: absolute;
+      font-size: 12px;
+      color: #57708a;
+      cursor: pointer;
+    }
+    .inner .right {
+      display: none;
+    }
+  }
+}

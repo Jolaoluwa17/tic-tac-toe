@@ -9,10 +9,8 @@
   font-size: 3em;
   font-family: lato;
   font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
+  line-height: 4rem;
+  margin: 0.4rem;
 }
 
 .x {
