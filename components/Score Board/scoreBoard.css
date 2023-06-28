@@ -1,0 +1,22 @@
+.scoreboard-root {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.x-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #3a89d5;
+}
+.o-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #39bcd3;
+}
+.draw-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

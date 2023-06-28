@@ -1,0 +1,29 @@
+.box {
+  background-color: white;
+  border: none;
+  border-radius: 10%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 60px;
+  font-family: lato;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.x {
+  color: #3a89d5;
+}
+
+.o {
+  color: #39bcd3;
+}
+
+.box:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
