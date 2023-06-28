@@ -76,7 +76,7 @@
   }
   @media (max-width: 768px) {
     .inner .left {
-      font-size: 16px;
+      font-size: 18px;
     }
     .inner .left button {
       padding: 10px;
@@ -86,28 +86,32 @@
       font-size: 12px;
     }
     .inner {
-      height: 30vh;
+      height: 40vh;
+    }
+    .right img {
+      width: 100%;
+      height: 80%;
     }
   }
-  @media (max-width: 426px){
+  @media (max-width: 426px) {
     .inner .left {
-      font-size: 10px;
+      font-size: 20px;
       width: 100%;
       margin-top: 2%;
     }
     .inner .left button {
       padding: 8px;
-      font-size: 8px;
+      font-size: 12px;
     }
     .rulesBtn {
-      font-size: 8px;
+      font-size: 12px;
     }
     .inner {
-      height: 20vh;
+      height: 50vh;
     }
     .help .text {
       position: absolute;
-      font-size: 12px;
+      font-size: 16px;
       color: #57708a;
       cursor: pointer;
     }
