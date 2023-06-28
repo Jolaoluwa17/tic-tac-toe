@@ -13,7 +13,7 @@
 .rules-modal-inner {
   position: relative;
   padding: 34px;
-  width: 100%;
+  width: 75%;
   max-width: 500px;
   background-color: #e9edf2;
   border-radius: 10px;
@@ -30,4 +30,8 @@
 .cancel-icon:hover {
   color: #57708a;
   cursor: pointer;
+}
+.main-content{
+  font-size: 14px;
+  text-align: justify;
 }
