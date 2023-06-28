@@ -23,7 +23,15 @@
   background-color: #e9edf2;
   font-size: 20px;
   width: 30px;
+  padding: 4px 0px 0px 0px;
   margin-left: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.close-btn:active{
+  background-color: #f7f7f7;
 }
 .cancel-icon:hover {
   color: #57708a;

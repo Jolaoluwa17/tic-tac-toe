@@ -22,16 +22,22 @@
   border: none;
   background-color: #e9edf2;
   font-size: 20px;
-  width: 100%;
+  width: 30px;
+  padding: 4px 0px 0px 0px;
+  margin-left: 90%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
-
+.close-btn:active {
+  background-color: #f7f7f7;
+}
 .cancel-icon:hover {
   color: #57708a;
   cursor: pointer;
 }
-.main-content{
+.main-content {
   font-size: 14px;
   text-align: justify;
 }
