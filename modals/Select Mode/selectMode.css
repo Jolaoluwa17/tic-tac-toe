@@ -30,7 +30,7 @@
   align-items: center;
   border-radius: 50%;
 }
-.close-btn:active{
+.close-btn:active {
   background-color: #f7f7f7;
 }
 .cancel-icon:hover {
