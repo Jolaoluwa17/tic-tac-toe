@@ -5,6 +5,7 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import { Rules } from "../../modals/Rules/Rules";
 import { SelectMode } from "../../modals/Select Mode/SelectMode";
+import { Difficulty } from "../../modals/Difficulty/Difficulty";
 import { GrCircleInformation } from "react-icons/gr";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -12,6 +13,7 @@ import "aos/dist/aos.css";
 export default function Home() {
   const [rules, setRules] = useState(false);
   const [mode, setMode] = useState(false);
+  const [isDifficulty, setIsDifficulty] = useState(false)
   useEffect(() => {
     if (typeof document !== "undefined") {
       AOS.init({
@@ -40,21 +42,21 @@ export default function Home() {
               <GrCircleInformation />
             </div>
             {showMessage && (
-        <div
-          className="inner-text"
-          style={{
-            backgroundColor: "white",
-            fontSize: "12px",
-            width: "100px",
-            padding: "10px",
-            borderRadius: "5px",
-            color: "black",
-          }}
-          data-aos="fade-right"
-        >
-          New Features Coming Soon ★
-        </div>
-      )}
+              <div
+                className="inner-text"
+                style={{
+                  backgroundColor: "white",
+                  fontSize: "12px",
+                  width: "100px",
+                  padding: "10px",
+                  borderRadius: "5px",
+                  color: "black",
+                }}
+                data-aos="fade-right"
+              >
+                New Features Coming Soon ★
+              </div>
+            )}
           </div>
         </div>
         <div className={styles.left}>
@@ -73,7 +75,8 @@ export default function Home() {
         </div>
       </div>
       <Rules trigger={rules} setTrigger={setRules} />
-      <SelectMode trigger={mode} setTrigger={setMode} />
+      <SelectMode trigger={mode} setTrigger={setMode} setIsDifficulty={setIsDifficulty} />
+      <Difficulty trigger={isDifficulty} setTrigger={setIsDifficulty} />
     </div>
   );
 }

@@ -1,12 +1,14 @@
-import "./selectMode.css";
+import "./difficulty.css";
 import { MdCancel } from "react-icons/md";
 import { BsFillPeopleFill, BsFillPersonFill } from "react-icons/bs";
+import { FaBrain } from "react-icons/fa";
+import {HiMiniHandThumbUp} from "react-icons/hi2"
 import Link from "next/link";
 
-export function SelectMode(props) {
+export function Difficulty(props) {
   return props.trigger ? (
-    <div className="select-mode-modal">
-      <div className="select-mode-modal-inner">
+    <div className="difficulty-modal">
+      <div className="difficulty-modal-inner">
         <button
           className="close-btn"
           onClick={() => {
@@ -19,20 +21,8 @@ export function SelectMode(props) {
         </button>
         <div className="content">
           <div className="header">Choose a mode</div>
-          <button
-            onClick={() => {
-              props.setTrigger(false);
-              props.setIsDifficulty(true);
-            }}
-            style={{ width: "60%" }}
-          >
-            <BsFillPersonFill
-              style={{ fontSize: "16px", marginRight: "5px" }}
-            />
-            Single Player
-          </button>
           <Link
-            href={"./Start"}
+            href={"./SinglePlayer"}
             style={{
               textDecoration: "none",
               display: "flex",
@@ -42,10 +32,25 @@ export function SelectMode(props) {
             }}
           >
             <button>
-              <BsFillPeopleFill
+              <HiMiniHandThumbUp
                 style={{ fontSize: "16px", marginRight: "5px" }}
               />
-              Double Player
+              Easy
+            </button>
+          </Link>
+          <Link
+            href={"./Hard"}
+            style={{
+              textDecoration: "none",
+              display: "flex",
+              alignItems: "center",
+              color: "#57708a",
+              width: "60%",
+            }}
+          >
+            <button>
+              <FaBrain style={{ fontSize: "16px", marginRight: "5px" }} />
+              Hard
             </button>
           </Link>
         </div>
