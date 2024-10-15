@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tic Tac Toe Game
 
-## Getting Started
+Welcome to the Tic Tac Toe Game! This is a simple yet engaging game that allows users to play Tic Tac Toe either against an AI or with another player on the same device. Built using **Next.js**, this project demonstrates interactive game mechanics and user interface design.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- **Single Player Mode**: Play against an AI that uses a basic algorithm to make decisions.
+- **Two Player Mode**: Play with another person on the same device, taking turns.
+- **Responsive Design**: The game is fully responsive and works well on both desktop and mobile devices.
+- **Reset Functionality**: Easily reset the game after each round to start fresh.
+- **Score Tracking**: Keep track of wins for both players during the session.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Next.js**: A React framework for building server-rendered applications.
+- **React**: A JavaScript library for building user interfaces.
+- **JavaScript**: The primary programming language used in this project.
+- **CSS**: For styling the components and enhancing the user experience.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation
 
-## Learn More
+To run this project locally, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+### Prerequisites
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Make sure you have the following installed:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
 
-## Deploy on Vercel
+### Setup
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/tic-tac-toe.git
+   ```
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+3. **Start the application**:
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The game should now be running on `http://localhost:3000`.
+
+## How to Play
+1. Choose your mode:
+  - Single Player: Play against the AI.
+  - Two Player: Play with another person on the same device.
+    
+2. Take turns clicking on the grid to place your marker (X or O).
+
+3. The first player to align three markers in a row (horizontally, vertically, or diagonally) wins!
+
+4. After each game, you can reset the board to play again.
+
+## Game Logic
+The game logic checks for a win condition after each move. If a player aligns three of their markers, a message will display announcing the winner. If all cells are filled and no player has won, the game will declare a draw.
